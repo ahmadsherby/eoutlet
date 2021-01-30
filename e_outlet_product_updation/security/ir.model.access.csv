@@ -8,3 +8,5 @@ product_categori,product_categori,model_product_categori,,1,1,1,1
 product_country,product_country,model_product_country,,1,1,1,1
 product_color,product_color,model_product_color,,1,1,1,1
 product_size,product_size,model_product_size,,1,1,1,1
+product_zone,product_zone,model_product_zone,,1,1,1,1
+product_shelf,product_shelf,model_product_shelf,,1,1,1,1
