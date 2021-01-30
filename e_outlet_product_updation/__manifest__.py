@@ -8,9 +8,10 @@
     'description': """
     update product info
     """,
-    'depends': ['base', 'product'],
+    'depends': ['base', 'product', 'point_of_sale'],
     'data': [
         'security/ir.model.access.csv',
         'views/product_template.xml',
+        'views/barcode_report.xml',
     ]
 }

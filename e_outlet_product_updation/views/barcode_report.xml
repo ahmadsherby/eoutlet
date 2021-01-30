@@ -1,0 +1,49 @@
+<odoo>
+<data>
+
+    <template id="report_simple_barcode_inherit" inherit_id="product.report_simple_barcode">
+        <xpath expr="//strong[@t-field='product.display_name']/.." position="attributes">
+            <attribute name="colspan">3</attribute>
+        </xpath>
+        <xpath expr="//strong[@t-field='product.display_name']/../.." position="after">
+            <tr>
+                <td>
+                    price without vat
+                    <strong t-field="product.lst_price"/>
+                </td>
+                <td>
+                    vat
+                    <t t-if="product.taxes_id">
+                        <t t-foreach="product.taxes_id" t-as="tax">
+                          <strong t-field="tax.name"/>
+                        </t>
+                    </t>
+                    <t t-else="">
+                        <strong>0</strong>
+                    </t>
+                </td>
+                <td>
+                    price with vat
+                    <t t-if="product.taxes_id">
+                       <t t-set="total_tax" t-value="0"/>
+                        <t t-foreach="product.taxes_id" t-as="tax">
+                            <t t-set="total_tax" t-value="total_tax + tax.amount"/>
+                        </t>
+                        <strong t-esc="product.lst_price + (product.lst_price * (total_tax/100))"/>
+                    </t>
+                    <t t-else="">
+                        <strong t-field="product.lst_price"/>
+                    </t>
+                </td>
+            </tr>
+
+        </xpath>
+
+        <xpath expr="//t[@t-if='product.barcode']/.." position="attributes">
+            <attribute name="colspan">3</attribute>
+        </xpath>
+
+    </template>
+
+</data>
+</odoo>
