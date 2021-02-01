@@ -10,6 +10,10 @@
                     <attribute name="domain">[('name','in',['size','المقاس'])]</attribute>
                 </xpath>
 
+                <xpath expr="//field[@name='taxes_id']" position="before">
+                    <field name="price_before_discount" />
+                </xpath>
+
                 <xpath expr="//field[@name='barcode']" position="after">
                     <field name="product_vendor_id" required="1"/>
                     <field name="product_brand_id" required="1"/>
@@ -45,8 +49,10 @@
                     <field name="product_zone_id" />
                     <field name="product_shelf_id" />
                 </xpath>
-<!--                <xpath expr="//field[@name='product_size_id']" position="after">-->
-<!--                </xpath>-->
+
+                <xpath expr="//field[@name='taxes_id']" position="before">
+                    <field name="price_before_discount" />
+                </xpath>
 
             </field>
         </record>
