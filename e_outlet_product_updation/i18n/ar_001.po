@@ -1,0 +1,294 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* e_outlet_product_updation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-30 13:15+0000\n"
+"PO-Revision-Date: 2021-01-30 13:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__available_in_pos
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__available_in_pos
+msgid "Available in POS"
+msgstr "متاح في نقطة البيع"
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_brand_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_brand_id
+msgid "Brand"
+msgstr "الماركه"
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_product__available_in_pos
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_template__available_in_pos
+msgid "Check if you want this product to appear in the Point of Sale."
+msgstr "فعل هذا الخيار إن كنت تريد ظهور هذا المنتج في نقطة البيع."
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__create_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__create_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__create_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__create_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__create_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__create_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__create_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__create_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__create_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__create_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__create_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__create_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__create_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__create_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__create_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__create_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__create_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__create_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__create_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__create_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_department_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__display_name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__display_name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__display_name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__display_name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__display_name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__display_name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__display_name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__display_name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__display_name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__display_name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__id
+msgid "ID"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand____last_update
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori____last_update
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color____last_update
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country____last_update
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department____last_update
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell____last_update
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season____last_update
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf____last_update
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size____last_update
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor____last_update
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__write_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__write_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__write_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__write_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__write_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__write_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__write_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__write_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__write_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__write_uid
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__write_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__write_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__write_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__write_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__write_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__write_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__write_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__write_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__write_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__write_date
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__name
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: e_outlet_product_updation
+#: model:ir.model,name:e_outlet_product_updation.model_product_product
+msgid "Product"
+msgstr "المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_shelf_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_shelf_id
+msgid "Product Shelf"
+msgstr "رقم الرف"
+
+#. module: e_outlet_product_updation
+#: model:ir.model,name:e_outlet_product_updation.model_product_template
+msgid "Product Template"
+msgstr "قالب المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_zone_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_zone_id
+msgid "Product Zone"
+msgstr "مكان المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_vendor_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_vendor_id
+msgid "Vendor"
+msgstr "المورد"
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_categori_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_categori_id
+msgid "category"
+msgstr "التصنيف"
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_color_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_color_id
+msgid "color"
+msgstr "اللون"
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_country_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_country_id
+msgid "country"
+msgstr "البلد"
+
+#. module: e_outlet_product_updation
+#: model_terms:ir.ui.view,arch_db:e_outlet_product_updation.report_simple_barcode_inherit
+msgid "price with vat"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model_terms:ir.ui.view,arch_db:e_outlet_product_updation.report_simple_barcode_inherit
+msgid "price without vat"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_model_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_model_id
+msgid "product model"
+msgstr "الموديل"
+
+#. module: e_outlet_product_updation
+#: model:ir.model,name:e_outlet_product_updation.model_product_brand
+msgid "product.brand"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model,name:e_outlet_product_updation.model_product_categori
+msgid "product.categori"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model,name:e_outlet_product_updation.model_product_color
+msgid "product.color"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model,name:e_outlet_product_updation.model_product_country
+msgid "product.country"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model,name:e_outlet_product_updation.model_product_department
+msgid "product.department"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model,name:e_outlet_product_updation.model_product_modell
+msgid "product.modell"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model,name:e_outlet_product_updation.model_product_season
+msgid "product.season"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model,name:e_outlet_product_updation.model_product_shelf
+msgid "product.shelf"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model,name:e_outlet_product_updation.model_product_size
+msgid "product.size"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model,name:e_outlet_product_updation.model_product_vendor
+msgid "product.vendor"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model,name:e_outlet_product_updation.model_product_zone
+msgid "product.zone"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_season_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_season_id
+msgid "season"
+msgstr "الموسم"
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_size_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_size_id
+msgid "size"
+msgstr "المقاس"
+
+#. module: e_outlet_product_updation
+#: model_terms:ir.ui.view,arch_db:e_outlet_product_updation.report_simple_barcode_inherit
+msgid "vat"
+msgstr ""

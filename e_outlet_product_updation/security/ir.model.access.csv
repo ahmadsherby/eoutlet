@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+product_vendor,product_vendor,model_product_vendor,,1,1,1,1
+product_brand,product_brand,model_product_brand,,1,1,1,1
+product_department,product_department,model_product_department,,1,1,1,1
+product_season,product_season,model_product_season,,1,1,1,1
+product_modell,product_modell,model_product_modell,,1,1,1,1
+product_categori,product_categori,model_product_categori,,1,1,1,1
+product_country,product_country,model_product_country,,1,1,1,1
+product_color,product_color,model_product_color,,1,1,1,1
+product_size,product_size,model_product_size,,1,1,1,1
+product_zone,product_zone,model_product_zone,,1,1,1,1
+product_shelf,product_shelf,model_product_shelf,,1,1,1,1
