@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 14.0+e\n"
+"Project-Id-Version: Odoo Server 13.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-01 08:51+0000\n"
-"PO-Revision-Date: 2021-02-01 08:51+0000\n"
+"POT-Creation-Date: 2021-01-30 13:15+0000\n"
+"PO-Revision-Date: 2021-01-30 13:15+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,32 +16,10 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: e_outlet_product_updation
-#: model_terms:ir.ui.view,arch_db:e_outlet_product_updation.report_simple_barcode_inherit
-msgid "<span class=\"text-muted\">No barcode available</span>"
-msgstr ""
-
-#. module: e_outlet_product_updation
-#: model:ir.model.fields,help:e_outlet_product_updation.field_product_product__type
-#: model:ir.model.fields,help:e_outlet_product_updation.field_product_template__type
-msgid ""
-"A storable product is a product for which you manage stock. The Inventory app has to be installed.\n"
-"A consumable product is a product for which stock is not managed.\n"
-"A service is a non-material product you provide."
-msgstr ""
-"المنتج القابل للتخزين هو المنتج الممكن إدارة مخزونه. يجب تثبيت تطبيق المخزون.\n"
-"المنتج الاستهلاكي هو المنتج الذي لا يمكن إدارة مخزونه.\n"
-"الخدمة هي منتج غير مادي تقوم بتوفيره."
-
-#. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__available_in_pos
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__available_in_pos
 msgid "Available in POS"
 msgstr "متاح في نقطة البيع"
-
-#. module: e_outlet_product_updation
-#: model_terms:ir.ui.view,arch_db:e_outlet_product_updation.report_simple_barcode_inherit
-msgid "Barcode"
-msgstr ""
 
 #. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_brand_id
@@ -98,15 +76,13 @@ msgstr "القسم"
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__display_name
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__display_name
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__display_name
-#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__display_name
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__display_name
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__display_name
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__display_name
-#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__display_name
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__display_name
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__display_name
 msgid "Display Name"
-msgstr "الاسم المعروض"
+msgstr ""
 
 #. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__id
@@ -115,15 +91,13 @@ msgstr "الاسم المعروض"
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__id
-#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__id
-#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__id
 msgid "ID"
-msgstr "المُعرف"
+msgstr ""
 
 #. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand____last_update
@@ -132,15 +106,13 @@ msgstr "المُعرف"
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country____last_update
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department____last_update
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell____last_update
-#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product____last_update
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season____last_update
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf____last_update
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size____last_update
-#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template____last_update
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor____last_update
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone____last_update
 msgid "Last Modified on"
-msgstr "آخر تعديل في"
+msgstr ""
 
 #. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__write_uid
@@ -188,12 +160,6 @@ msgid "Name"
 msgstr "الاسم"
 
 #. module: e_outlet_product_updation
-#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__price_before_discount
-#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__price_before_discount
-msgid "Price Before Discount"
-msgstr "سعر البيع قبل الخصم"
-
-#. module: e_outlet_product_updation
 #: model:ir.model,name:e_outlet_product_updation.model_product_product
 msgid "Product"
 msgstr "المنتج"
@@ -210,21 +176,10 @@ msgid "Product Template"
 msgstr "قالب المنتج"
 
 #. module: e_outlet_product_updation
-#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__type
-#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__type
-msgid "Product Type"
-msgstr "نوع المنتج"
-
-#. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_zone_id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_zone_id
 msgid "Product Zone"
 msgstr "مكان المنتج"
-
-#. module: e_outlet_product_updation
-#: model_terms:ir.ui.view,arch_db:e_outlet_product_updation.report_simple_barcode_inherit
-msgid "SR"
-msgstr ""
 
 #. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_vendor_id
@@ -249,6 +204,16 @@ msgstr "اللون"
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_country_id
 msgid "country"
 msgstr "البلد"
+
+#. module: e_outlet_product_updation
+#: model_terms:ir.ui.view,arch_db:e_outlet_product_updation.report_simple_barcode_inherit
+msgid "price with vat"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model_terms:ir.ui.view,arch_db:e_outlet_product_updation.report_simple_barcode_inherit
+msgid "price without vat"
+msgstr ""
 
 #. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_model_id
@@ -322,3 +287,8 @@ msgstr "الموسم"
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_size_id
 msgid "size"
 msgstr "المقاس"
+
+#. module: e_outlet_product_updation
+#: model_terms:ir.ui.view,arch_db:e_outlet_product_updation.report_simple_barcode_inherit
+msgid "vat"
+msgstr ""
