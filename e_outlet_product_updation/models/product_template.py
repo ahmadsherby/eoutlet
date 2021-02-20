@@ -142,14 +142,20 @@ class ProductTemplate(models.Model):
         product = self.env['product.product'].search([('product_tmpl_id.id', '=', products.id)])
         x = products['barcode']
         default_code = products['default_code']
+        cost = products['standard_price']
         for p in product:
-            if products['barcode']:
+            if x:
+                #                 products['barcode']
                 p.update({
                     'barcode': str(x) + '-' + str(p.product_template_attribute_value_ids.name)
                 })
             if default_code:
                 p.update({
                     'default_code': str(default_code)
+                })
+            if cost:
+                p.update({
+                    'standard_price': cost
                 })
         return products
 
