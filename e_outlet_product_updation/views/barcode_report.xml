@@ -17,7 +17,7 @@
                         .tale-style tr td{
                         margin:0;padding:0;
                         }
-                        .barcode{font-size:10px;}
+                        .barcode{font-size:7px;}
                         .price-left{
                         margin-left:25px;font-size:12px;
                         }

@@ -5,56 +5,67 @@ from odoo import models, fields, api, _
 
 class ProductZone(models.Model):
     _name = 'product.zone'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     name = fields.Char()
 
 
 class ProductShelf(models.Model):
     _name = 'product.shelf'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     name = fields.Char()
 
 
 class ProductVendor(models.Model):
     _name = 'product.vendor'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     name = fields.Char()
 
 
 class ProductBrand(models.Model):
     _name = 'product.brand'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     name = fields.Char()
 
 
 class ProductDepartment(models.Model):
     _name = 'product.department'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     name = fields.Char()
 
 
 class ProductSeason(models.Model):
     _name = 'product.season'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     name = fields.Char()
 
 
 class ProductModell(models.Model):
     _name = 'product.modell'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     name = fields.Char()
 
 
 class ProductCategori(models.Model):
     _name = 'product.categori'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     name = fields.Char()
 
 
 class ProductCountry(models.Model):
     _name = 'product.country'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     name = fields.Char()
 
 
 class ProductColor(models.Model):
     _name = 'product.color'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     name = fields.Char()
 
 
 class ProductSize(models.Model):
     _name = 'product.size'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     name = fields.Char()
 
 
