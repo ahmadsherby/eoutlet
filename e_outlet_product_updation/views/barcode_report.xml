@@ -81,9 +81,11 @@
 
                     <tr>
                         <td  colspan="3" class="table-active text-left" style="height: 1rem;background:#fff;border: 0px solid white;padding:0 10px">
-                          <span class="footer-left" t-field="product.product_brand_id.name"/>
+<!--                          <span class="footer-left" t-field="product.product_brand_id.name[0:10]"/>-->
+                          <span class="footer-left" t-esc="product.product_brand_id.name[0:10] if product.product_brand_id else ''"/>
                           <span class="barcode" t-field="product.barcode"/>
-                          <span class="footer-right" t-field="product.name" />
+<!--                          <span class="footer-right" t-field="product.name[0:10]" />-->
+                          <span class="footer-right" t-esc="product.name[0:10] if product.name else ''"/>
 
                         </td>
                     </tr>
