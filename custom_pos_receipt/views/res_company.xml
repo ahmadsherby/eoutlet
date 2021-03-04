@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
+    <template id="point_of_sale" inherit_id="point_of_sale.assets" name="point_of_sale assets">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/custom_pos_receipt/static/src/js/company_data.js"></script>
+        </xpath>
+    </template>
+
     <record id="res_company_form_inherit" model="ir.ui.view" >
         <field name="name">res.company</field>
         <field name="model">res.company</field>
