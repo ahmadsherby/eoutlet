@@ -8,32 +8,35 @@
 <!--         </xpath>          -->
         <xpath expr="//div[hasclass('pos-receipt-contact')]" position="replace">
             <div class="pos-receipt-contact">
-                <t t-if="receipt.company.contact_address">
-                    <div><t t-esc="receipt.company.contact_address" /></div>
+                 <t t-if="receipt.company.fox_town_name">
+                    <div><t t-esc="receipt.company.fox_town_name" /></div>
                 </t>
-                <t t-if="receipt.company.phone">
-                    <div>Tel:<t t-esc="receipt.company.phone" /></div>
+                <t t-if="receipt.company.fox_address">
+                    <div><t t-esc="receipt.company.fox_address" /></div>
+                </t>
+                <t t-if="receipt.company.fox_phone">
+                    <div>Tel:<t t-esc="receipt.company.fox_phone" /></div>
                 </t>
 
-                <t t-if="receipt.company.email">
-                    <div><t t-esc="receipt.company.email" /></div>
+                <t t-if="receipt.company.fox_email">
+                    <div>Email : <t t-esc="receipt.company.fox_email" /></div>
                 </t>
-                <t t-if="receipt.company.website">
-                    <div><t t-esc="receipt.company.website" /></div>
+<!--                <t t-if="receipt.company.website">-->
+<!--                    <div><t t-esc="receipt.company.website" /></div>-->
+<!--                </t>-->
+<!--                <t t-if="receipt.header_html">-->
+<!--                    <t t-raw="receipt.header_html" />-->
+<!--                </t>-->
+<!--                <t t-if="!receipt.header_html and receipt.header">-->
+<!--                    <div><t t-esc="receipt.header" /></div>-->
+<!--                </t>-->
+                 <t t-if="receipt.company.fox_vat_number">
+                    <div>VAT Number:<t t-esc="receipt.company.fox_vat_number" /></div>
                 </t>
-                <t t-if="receipt.header_html">
-                    <t t-raw="receipt.header_html" />
-                </t>
-                <t t-if="!receipt.header_html and receipt.header">
-                    <div><t t-esc="receipt.header" /></div>
-                </t>
-<!--                 <t t-if="receipt.company.vat">
-                    <div>TRN:<t t-esc="receipt.company.vat" /></div>
-                </t> -->
                 <t t-if="receipt.cashier">
                     <div class="cashier">
                         <div>--------------------------------</div>
-                        <div>Served by <t t-esc="receipt.cashier" /></div>
+                        <div>Cashier <t t-esc="receipt.cashier" /></div>
                     </div>
                 </t>
             </div>
@@ -42,14 +45,14 @@
             <div class="orderlines">
                 <table class='receipt-orderlines'>
                     <colgroup>
+                        <col width='45%' />
+<!--                         <col width='10%' /> -->
+                        <col width='25%' />
                         <col width='40%' />
-                        <col width='10%' />
-                        <col width='25%' />
-                        <col width='25%' />
                     </colgroup>
                     <tr style="border-bottom: 1px dashed black;">
                         <th style='text-align:left'>Product</th>
-                        <th style='text-align:left'>Qty</th>
+<!--                         <th style='text-align:left'>Qty</th> -->
                         <th style='text-align:right'>Unit Price</th>
                         <th style='text-align:right'>Price with VAT</th>
                     </tr>
@@ -61,24 +64,33 @@
                                     With a <t t-esc="orderline.get_discount()"/>% discount
                                 </div>
                             </t>
+
+                            <t t-if="orderline.get_quantity_str_with_unit()">
+                                <div class="pos-disc-font">
+                                    QTY : <t t-esc="orderline.get_quantity_str_with_unit()"/>
+                                </div>
+                            </t>
+
                            <t t-if="orderline.get_product().barcode">
                                 <div class="pos-disc-font">
                                     <t t-esc="orderline.get_product().barcode"/>
                                 </div>
-
                             </t>
 
 
                         </td>
-                        <td>
+
+<!--                         <td>
                             <t t-esc="orderline.get_quantity_str_with_unit()"/>
-                        </td>
+                        </td> -->
+
                         <td>
                             <!-- <t t-set="a" t-value="orderline.quantityStr"></t> -->
                             <t t-esc="env.pos.format_currency(orderline.get_unit_display_price())"></t>
                             <!-- <t t-set="c" t-value="b/a"></t>
                             <t t-esc="c"/> -->
                         </td>
+
                         <td style='text-align:right'>
                             <t t-esc="env.pos.format_currency(orderline.get_price_with_tax())"/>
                         </td>

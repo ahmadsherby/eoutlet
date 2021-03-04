@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_company_form_inherit" model="ir.ui.view" >
+        <field name="name">res.company</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//notebook" position="inside">
+                <page string="fox town e-outlet">
+                    <group>
+                        <group>
+                            <field name="fox_town_logo" widget="image" class="oe_avatar"/>
+                        </group>
+                        <group>
+                            <field name="fox_town_name" />
+                            <field name="fox_address" />
+                            <field name="fox_vat_number" />
+                            <field name="fox_phone" />
+                            <field name="fox_email" />
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>
