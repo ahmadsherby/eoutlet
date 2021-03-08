@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="point_of_sale.template" xml:space="preserve">
+    <t t-name="OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">
+         <xpath expr="//div[hasclass('pos-receipt-order-data')]" position="replace" />
+
+        <xpath expr="//t[@t-if='receipt.company.logo']" position="replace" />
+
+        <xpath expr="//t[@t-if='!receipt.company.logo']" position="replace" />
+
+        <xpath expr="//div[hasclass('pos-receipt-contact')]" position="replace">
+            <div class="pos-receipt-contact">
+<!--                 <t>
+                    <div>
+                        <img class="pos-receipt-logo" t-att-src='receipt.company.fox_town_logo' alt="Logo"/>
+                       </div>
+                </t>  -->
+                <t>
+                    <div><t t-esc="receipt.company.fox_town_name" /></div>
+                </t>
+                <t>
+                    <div><t t-esc="receipt.company.fox_address" /></div>
+                </t>
+                <t t-if="receipt.company.fox_phone">
+                    <div>Tel:<t t-esc="receipt.company.fox_phone" /></div>
+                </t>
+
+                <t t-if="receipt.company.fox_email">
+                    <div>Email : <t t-esc="receipt.company.fox_email" /></div>
+                </t>
+
+                <t t-if="receipt.company.fox_vat_number">
+                    <div>VAT Number:<t t-esc="receipt.company.fox_vat_number" /></div>
+                </t>
+
+                <t>
+                    <div>--------------------------------</div>
+                </t>
+
+                <t t-if="receipt.header_html">
+                   <t t-raw="receipt.header_html" />
+               </t>
+               <t t-if="!receipt.header_html and receipt.header">
+                   <div><t t-esc="receipt.header" /></div>
+               </t>
+
+                <div class="pos-receipt-order-data">
+                    <div><t t-esc="receipt.name" /></div>
+                    <div><t t-esc="receipt.date.localestring" /></div>
+                </div>
+
+<!--                 <t t-if="receipt.cashier">
+                    <div class="cashier">
+                        <div>Cashier <t t-esc="receipt.cashier" /></div>
+                    </div>
+                </t> -->
+
+                <t t-if="receipt.cashier">
+                    <div class="cashier">
+                        <div>Cashier <t t-esc="receipt.cashier" /></div>
+                    </div>
+                </t>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('orderlines')]" position="replace">
+            <div class="orderlines">
+                <table class='receipt-orderlines'>
+                    <colgroup>
+                        <col width='45%' />
+<!--                         <col width='10%' /> -->
+                        <col width='25%' />
+                        <col width='40%' />
+                    </colgroup>
+                    <tr style="border-bottom: 1px dashed black;">
+                        <th style='text-align:left'>Product</th>
+<!--                         <th style='text-align:left'>Qty</th> -->
+                        <th style='text-align:right'>Unit Price</th>
+                        <th style='text-align:right'>Price with VAT</th>
+                    </tr>
+                    <tr t-foreach="orderlines" t-as="orderline" t-key="orderline.id">
+                        <td>
+                            <t t-esc="orderline.get_product().display_name"/>
+                           <t t-if="orderline.get_discount() > 0">
+                                <div class="pos-disc-font">
+                                    With a <t t-esc="orderline.get_discount()"/>% discount
+                                </div>
+                            </t>
+
+                            <t t-if="orderline.get_quantity_str_with_unit()">
+                                <div class="pos-disc-font">
+                                    QTY : <t t-esc="orderline.get_quantity_str_with_unit()"/>
+                                </div>
+                            </t>
+
+                           <t t-if="orderline.get_product().barcode">
+                                <div class="pos-disc-font">
+                                    <t t-esc="orderline.get_product().barcode"/>
+                                </div>
+                            </t>
+
+
+                        </td>
+
+<!--                         <td>
+                            <t t-esc="orderline.get_quantity_str_with_unit()"/>
+                        </td> -->
+
+                        <td>
+                            <!-- <t t-set="a" t-value="orderline.quantityStr"></t> -->
+                            <t t-esc="env.pos.format_currency(orderline.get_unit_display_price())"></t>
+                            <!-- <t t-set="c" t-value="b/a"></t>
+                            <t t-esc="c"/> -->
+                        </td>
+
+                        <td style='text-align:right'>
+                            <t t-esc="env.pos.format_currency(orderline.get_price_with_tax())"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </xpath>
+       <xpath expr="//t[@t-if='!isTaxIncluded']" position="replace">
+           <div class="pos-receipt-right-align">&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</div>
+           <br/>
+           <div>Subtotal<span t-esc="env.pos.format_currency(receipt.subtotal)" class="pos-receipt-right-align"/>              </div>
+           <t t-foreach="receipt.tax_details" t-as="tax" t-key="tax.name">
+               <div>
+                   VAT:<span t-esc='env.pos.format_currency_no_symbol(tax.amount)' class="pos-receipt-right-align"/>
+               </div>
+           </t>
+       </xpath>
+
+    </t>
+</templates>
