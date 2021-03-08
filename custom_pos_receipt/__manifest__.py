@@ -21,7 +21,7 @@
     source : https://stackoverflow.com/questions/60941958/odoo-pos-not-showing-custom-fields-in-receipts
     """,
     'website': 'www.kanakinfosystems.com',
-    'author': 'Kanak Infosystems LLP.',
+    'author': 'Kanak Infosystems LLPeee.',
     'images': ['static/description/banner.jpg'],
     'description': "Customized our point of sale receipt",
     'depends': ['base', 'point_of_sale'],
