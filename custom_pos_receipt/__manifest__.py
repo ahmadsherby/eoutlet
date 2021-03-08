@@ -16,7 +16,10 @@
     'name': 'POS Custom Receipt',
     'version': '1.0',
     'category': 'Point Of Sale',
-    'summary': 'Customized Receipt of Point Of Sales',
+    'summary': """
+    Customized Receipt of Point Of Sales
+    source : https://stackoverflow.com/questions/60941958/odoo-pos-not-showing-custom-fields-in-receipts
+    """,
     'website': 'www.kanakinfosystems.com',
     'author': 'Kanak Infosystems LLP.',
     'images': ['static/description/banner.jpg'],
