@@ -9,11 +9,11 @@
 
         <xpath expr="//div[hasclass('pos-receipt-contact')]" position="replace">
             <div class="pos-receipt-contact">
-<!--                 <t>
+                <t>
                     <div>
                         <img class="pos-receipt-logo" t-att-src='receipt.company.fox_town_logo' alt="Logo"/>
-                       </div>
-                </t>  -->
+                    </div>
+                </t>
                 <t>
                     <div><t t-esc="receipt.company.fox_town_name" /></div>
                 </t>
