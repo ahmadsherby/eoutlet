@@ -37,6 +37,7 @@
             <field name="inherit_id" ref="product.product_normal_form_view"/>
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='barcode']" position="after">
+                    <field name="barcode_new_name" />
                     <field name="product_vendor_id" required="1"/>
                     <field name="product_brand_id" required="1"/>
                     <field name="product_department_id" required="1"/>
@@ -52,6 +53,10 @@
 
                 <xpath expr="//field[@name='taxes_id']" position="before">
                     <field name="price_before_discount" />
+                </xpath>
+
+                <xpath expr="//header" position="inside">
+                    <button name="generate_barcode_randomly" type="object" string="generate barcode"/>
                 </xpath>
 
             </field>

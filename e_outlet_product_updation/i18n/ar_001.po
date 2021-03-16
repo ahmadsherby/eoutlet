@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 14.0+e\n"
+"Project-Id-Version: Odoo Server 13.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-01 08:51+0000\n"
-"PO-Revision-Date: 2021-02-01 08:51+0000\n"
+"POT-Creation-Date: 2021-03-04 08:53+0000\n"
+"PO-Revision-Date: 2021-03-04 08:53+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -33,6 +33,81 @@ msgstr ""
 "الخدمة هي منتج غير مادي تقوم بتوفيره."
 
 #. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__message_needaction
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__message_needaction
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__message_needaction
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__message_needaction
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__message_needaction
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__message_needaction
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__message_needaction
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__message_needaction
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__message_needaction
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__message_needaction
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__activity_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__activity_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__activity_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__activity_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__activity_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__activity_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__activity_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__activity_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__activity_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__activity_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__activity_exception_decoration
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__activity_exception_decoration
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__activity_exception_decoration
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__activity_exception_decoration
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__activity_exception_decoration
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__activity_exception_decoration
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__activity_exception_decoration
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__activity_exception_decoration
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__activity_exception_decoration
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__activity_exception_decoration
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__activity_state
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__activity_state
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__activity_state
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__activity_state
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__activity_state
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__activity_state
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__activity_state
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__activity_state
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__activity_state
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__activity_state
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__message_attachment_count
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__message_attachment_count
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__message_attachment_count
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__message_attachment_count
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__message_attachment_count
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__message_attachment_count
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__message_attachment_count
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__message_attachment_count
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__message_attachment_count
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__message_attachment_count
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__available_in_pos
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__available_in_pos
 msgid "Available in POS"
@@ -41,7 +116,7 @@ msgstr "متاح في نقطة البيع"
 #. module: e_outlet_product_updation
 #: model_terms:ir.ui.view,arch_db:e_outlet_product_updation.report_simple_barcode_inherit
 msgid "Barcode"
-msgstr ""
+msgstr "باركود"
 
 #. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_brand_id
@@ -54,6 +129,11 @@ msgstr "الماركه"
 #: model:ir.model.fields,help:e_outlet_product_updation.field_product_template__available_in_pos
 msgid "Check if you want this product to appear in the Point of Sale."
 msgstr "فعل هذا الخيار إن كنت تريد ظهور هذا المنتج في نقطة البيع."
+
+#. module: e_outlet_product_updation
+#: model:ir.ui.menu,name:e_outlet_product_updation.product_country_menu
+msgid "Country"
+msgstr "بلد المنتج"
 
 #. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__create_uid
@@ -98,15 +178,58 @@ msgstr "القسم"
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__display_name
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__display_name
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__display_name
-#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__display_name
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__display_name
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__display_name
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__display_name
-#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__display_name
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__display_name
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__display_name
 msgid "Display Name"
 msgstr "الاسم المعروض"
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__message_follower_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__message_follower_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__message_follower_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__message_follower_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__message_follower_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__message_follower_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__message_follower_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__message_follower_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__message_follower_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__message_follower_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__message_channel_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__message_channel_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__message_channel_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__message_channel_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__message_channel_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__message_channel_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__message_channel_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__message_channel_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__message_channel_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__message_channel_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__message_partner_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__message_partner_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__message_partner_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__message_partner_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__message_partner_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__message_partner_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__message_partner_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__message_partner_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__message_partner_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__message_partner_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
 
 #. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__id
@@ -115,15 +238,110 @@ msgstr "الاسم المعروض"
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__id
-#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__id
-#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__id
 msgid "ID"
 msgstr "المُعرف"
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__activity_exception_icon
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__activity_exception_icon
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__activity_exception_icon
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__activity_exception_icon
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__activity_exception_icon
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__activity_exception_icon
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__activity_exception_icon
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__activity_exception_icon
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__activity_exception_icon
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__activity_exception_icon
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_brand__activity_exception_icon
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_categori__activity_exception_icon
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_color__activity_exception_icon
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_country__activity_exception_icon
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_department__activity_exception_icon
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_modell__activity_exception_icon
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_season__activity_exception_icon
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_shelf__activity_exception_icon
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_size__activity_exception_icon
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_vendor__activity_exception_icon
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_zone__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_brand__message_needaction
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_brand__message_unread
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_categori__message_needaction
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_categori__message_unread
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_color__message_needaction
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_color__message_unread
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_country__message_needaction
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_country__message_unread
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_department__message_needaction
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_department__message_unread
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_modell__message_needaction
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_modell__message_unread
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_season__message_needaction
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_season__message_unread
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_shelf__message_needaction
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_shelf__message_unread
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_size__message_needaction
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_size__message_unread
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_vendor__message_needaction
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_vendor__message_unread
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_zone__message_needaction
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_zone__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_brand__message_has_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_brand__message_has_sms_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_categori__message_has_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_categori__message_has_sms_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_color__message_has_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_color__message_has_sms_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_country__message_has_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_country__message_has_sms_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_department__message_has_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_department__message_has_sms_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_modell__message_has_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_modell__message_has_sms_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_season__message_has_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_season__message_has_sms_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_shelf__message_has_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_shelf__message_has_sms_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_size__message_has_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_size__message_has_sms_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_vendor__message_has_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_vendor__message_has_sms_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_zone__message_has_error
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_zone__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__message_is_follower
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__message_is_follower
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__message_is_follower
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__message_is_follower
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__message_is_follower
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__message_is_follower
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__message_is_follower
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__message_is_follower
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__message_is_follower
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__message_is_follower
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__message_is_follower
+msgid "Is Follower"
+msgstr ""
 
 #. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand____last_update
@@ -132,11 +350,9 @@ msgstr "المُعرف"
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country____last_update
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department____last_update
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell____last_update
-#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product____last_update
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season____last_update
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf____last_update
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size____last_update
-#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template____last_update
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor____last_update
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone____last_update
 msgid "Last Modified on"
@@ -173,6 +389,51 @@ msgid "Last Updated on"
 msgstr ""
 
 #. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__message_main_attachment_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__message_main_attachment_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__message_main_attachment_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__message_main_attachment_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__message_main_attachment_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__message_main_attachment_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__message_main_attachment_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__message_main_attachment_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__message_main_attachment_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__message_main_attachment_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__message_has_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__message_has_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__message_has_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__message_has_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__message_has_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__message_has_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__message_has_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__message_has_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__message_has_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__message_has_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__name
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__name
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__name
@@ -188,6 +449,126 @@ msgid "Name"
 msgstr "الاسم"
 
 #. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__activity_date_deadline
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__activity_date_deadline
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__activity_date_deadline
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__activity_date_deadline
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__activity_date_deadline
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__activity_date_deadline
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__activity_date_deadline
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__activity_date_deadline
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__activity_date_deadline
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__activity_date_deadline
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__activity_summary
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__activity_summary
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__activity_summary
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__activity_summary
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__activity_summary
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__activity_summary
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__activity_summary
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__activity_summary
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__activity_summary
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__activity_summary
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__activity_type_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__activity_type_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__activity_type_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__activity_type_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__activity_type_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__activity_type_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__activity_type_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__activity_type_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__activity_type_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__activity_type_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__message_needaction_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__message_needaction_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__message_needaction_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__message_needaction_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__message_needaction_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__message_needaction_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__message_needaction_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__message_needaction_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__message_needaction_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__message_needaction_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__message_has_error_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__message_has_error_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__message_has_error_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__message_has_error_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__message_has_error_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__message_has_error_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__message_has_error_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__message_has_error_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__message_has_error_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__message_has_error_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_brand__message_needaction_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_categori__message_needaction_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_color__message_needaction_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_country__message_needaction_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_department__message_needaction_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_modell__message_needaction_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_season__message_needaction_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_shelf__message_needaction_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_size__message_needaction_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_vendor__message_needaction_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_zone__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_brand__message_has_error_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_categori__message_has_error_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_color__message_has_error_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_country__message_has_error_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_department__message_has_error_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_modell__message_has_error_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_season__message_has_error_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_shelf__message_has_error_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_size__message_has_error_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_vendor__message_has_error_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_zone__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_brand__message_unread_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_categori__message_unread_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_color__message_unread_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_country__message_unread_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_department__message_unread_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_modell__message_unread_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_season__message_unread_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_shelf__message_unread_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_size__message_unread_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_vendor__message_unread_counter
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_zone__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__price_before_discount
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__price_before_discount
 msgid "Price Before Discount"
@@ -199,10 +580,46 @@ msgid "Product"
 msgstr "المنتج"
 
 #. module: e_outlet_product_updation
+#: model:ir.ui.menu,name:e_outlet_product_updation.product_brand_menu
+msgid "Product Brand"
+msgstr "ماركه المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.ui.menu,name:e_outlet_product_updation.product_category_menu
+msgid "Product Category"
+msgstr "تصنيفات المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.ui.menu,name:e_outlet_product_updation.product_color_menu
+msgid "Product Color"
+msgstr "الوان المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.ui.menu,name:e_outlet_product_updation.product_department_menu
+msgid "Product Department"
+msgstr "اقسام المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.ui.menu,name:e_outlet_product_updation.product_model_menu
+msgid "Product Model"
+msgstr "موديلات المنتج"
+
+#. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_shelf_id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_shelf_id
+#: model:ir.ui.menu,name:e_outlet_product_updation.product_shelf_menu
 msgid "Product Shelf"
-msgstr "رقم الرف"
+msgstr "ارقام الرف"
+
+#. module: e_outlet_product_updation
+#: model:ir.ui.menu,name:e_outlet_product_updation.product_size_menu
+msgid "Product Size"
+msgstr "مقاسات المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.ui.menu,name:e_outlet_product_updation.product_specifications_main_menu
+msgid "Product Specifications"
+msgstr "مواصفات المنتج"
 
 #. module: e_outlet_product_updation
 #: model:ir.model,name:e_outlet_product_updation.model_product_template
@@ -218,8 +635,39 @@ msgstr "نوع المنتج"
 #. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_zone_id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_zone_id
+#: model:ir.ui.menu,name:e_outlet_product_updation.product_zone_menu
 msgid "Product Zone"
-msgstr "مكان المنتج"
+msgstr "اماكن المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__activity_user_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__activity_user_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__activity_user_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__activity_user_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__activity_user_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__activity_user_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__activity_user_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__activity_user_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__activity_user_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__activity_user_id
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__message_has_sms_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__message_has_sms_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__message_has_sms_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__message_has_sms_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__message_has_sms_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__message_has_sms_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__message_has_sms_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__message_has_sms_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__message_has_sms_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__message_has_sms_error
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
 
 #. module: e_outlet_product_updation
 #: model_terms:ir.ui.view,arch_db:e_outlet_product_updation.report_simple_barcode_inherit
@@ -227,10 +675,115 @@ msgid "SR"
 msgstr ""
 
 #. module: e_outlet_product_updation
+#: model:ir.ui.menu,name:e_outlet_product_updation.product_season_menu
+msgid "Season"
+msgstr "مواسم المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_brand__activity_state
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_categori__activity_state
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_color__activity_state
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_country__activity_state
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_department__activity_state
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_modell__activity_state
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_season__activity_state
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_shelf__activity_state
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_size__activity_state
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_vendor__activity_state
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_zone__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_brand__activity_exception_decoration
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_categori__activity_exception_decoration
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_color__activity_exception_decoration
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_country__activity_exception_decoration
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_department__activity_exception_decoration
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_modell__activity_exception_decoration
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_season__activity_exception_decoration
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_shelf__activity_exception_decoration
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_size__activity_exception_decoration
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_vendor__activity_exception_decoration
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_zone__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__message_unread
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__message_unread
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__message_unread
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__message_unread
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__message_unread
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__message_unread
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__message_unread
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__message_unread
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__message_unread
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__message_unread
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__message_unread_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__message_unread_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__message_unread_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__message_unread_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__message_unread_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__message_unread_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__message_unread_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__message_unread_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__message_unread_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__message_unread_counter
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_vendor_id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_vendor_id
 msgid "Vendor"
 msgstr "المورد"
+
+#. module: e_outlet_product_updation
+#: model:ir.actions.act_window,name:e_outlet_product_updation.product_vendor_action
+#: model:ir.ui.menu,name:e_outlet_product_updation.product_vendor_menu
+msgid "Vendors"
+msgstr "الموردين"
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_brand__website_message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_categori__website_message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_color__website_message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_country__website_message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_department__website_message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_modell__website_message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_season__website_message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_shelf__website_message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_size__website_message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_vendor__website_message_ids
+#: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_zone__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: e_outlet_product_updation
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_brand__website_message_ids
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_categori__website_message_ids
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_color__website_message_ids
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_country__website_message_ids
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_department__website_message_ids
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_modell__website_message_ids
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_season__website_message_ids
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_shelf__website_message_ids
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_size__website_message_ids
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_vendor__website_message_ids
+#: model:ir.model.fields,help:e_outlet_product_updation.field_product_zone__website_message_ids
+msgid "Website communication history"
+msgstr ""
 
 #. module: e_outlet_product_updation
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_categori_id
@@ -251,10 +804,56 @@ msgid "country"
 msgstr "البلد"
 
 #. module: e_outlet_product_updation
+#: model:ir.actions.act_window,name:e_outlet_product_updation.product_brand_action
+msgid "product brand"
+msgstr "ماركه المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.actions.act_window,name:e_outlet_product_updation.product_category_action
+msgid "product category"
+msgstr "تصنيفات المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.actions.act_window,name:e_outlet_product_updation.product_color_action
+msgid "product color"
+msgstr "الوان المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.actions.act_window,name:e_outlet_product_updation.product_country_action
+msgid "product country"
+msgstr "بلد المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.actions.act_window,name:e_outlet_product_updation.product_department_action
+msgid "product department"
+msgstr "اقسام المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.actions.act_window,name:e_outlet_product_updation.product_modell_action
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_product__product_model_id
 #: model:ir.model.fields,field_description:e_outlet_product_updation.field_product_template__product_model_id
 msgid "product model"
 msgstr "الموديل"
+
+#. module: e_outlet_product_updation
+#: model:ir.actions.act_window,name:e_outlet_product_updation.product_season_action
+msgid "product season"
+msgstr "مواسم المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.actions.act_window,name:e_outlet_product_updation.product_shelf_action
+msgid "product shelf"
+msgstr "رف المنتجات"
+
+#. module: e_outlet_product_updation
+#: model:ir.actions.act_window,name:e_outlet_product_updation.product_size_action
+msgid "product size"
+msgstr "مقاس المنتج"
+
+#. module: e_outlet_product_updation
+#: model:ir.actions.act_window,name:e_outlet_product_updation.product_zone_action
+msgid "product zone"
+msgstr "مكان المنتج"
 
 #. module: e_outlet_product_updation
 #: model:ir.model,name:e_outlet_product_updation.model_product_brand

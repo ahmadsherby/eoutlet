@@ -1,6 +1,18 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api, _
+from random import randint
+
+import logging
+
+_logger = logging.getLogger(__name__)
+grey = "\x1b[38;21m"
+yellow = "\x1b[33;21m"
+red = "\x1b[31;21m"
+bold_red = "\x1b[31;1m"
+reset = "\x1b[0m"
+green = "\x1b[32m"
+blue = "\x1b[34m"
 
 
 class ProductZone(models.Model):
@@ -61,58 +73,76 @@ class ProductSize(models.Model):
 class ProductProduct(models.Model):
     _inherit = 'product.product'
 
-    # @api.model
-    # def default_get(self, fields_list):
-    #     """get default lines"""
-    #     print("LLLLLLLLLLLLLLLLLL", fields_list)
-    #     # print("LLLLLLLLLLLLLLLLLL", fields_list['default_code'])
-    #     print("LLLLLLLLLLLLLLLLLL", self.default_code)
-    #     res = super(ProductProduct, self).default_get(fields_list)
-    #     res['default_code'] = str(self.product_tmpl_id.default_code) + '999999999999999999'
-    #     return res
+    barcode_new_name = fields.Char()
 
-    # @api.model
-    # def create(self, vals_list):
-    #     products = super(ProductProduct, self).create(vals_list)
-    #     print(":::::::::::::ProductProduct create:::::::::::::::", products)
-    #     return products
-    #
-    # def write(self, values):
-    #     print(":::::::::::::ProductProduct values:::::::::::::::", values)
-    #     print(":::::::::::::product_tmpl_id:::::::::::::::", self.product_tmpl_id)
-    #     print(":::::::::::::default_code:::::::::::::::", self.product_tmpl_id.default_code)
-    #     res = super(ProductProduct, self).write(values)
-    #     print(":::::::::::::default_codeeeeeeeeee:::::::::::::::", self.product_tmpl_id.default_code)
-    #     if 'active' in values:
-    #         if self.product_tmpl_id:
-    #            if self.product_tmpl_id.default_code:
-    #                 # print("product_template_attribute_value_ids", self.product_template_attribute_value_ids)
-    #                 self.default_code = str(self.product_tmpl_id.default_code)
-    #            # if self.product_tmpl_id.barcode:
-    #            #      # print("product_template_attribute_value_ids", self.product_template_attribute_value_ids)
-    #            #      self.barcode = str(self.product_tmpl_id.barcode)
-    #                                 # + str(self.product_template_attribute_value_ids[0]['name'])
-    #     # print(":::::::::::::ProductProduct res write:::::::::::::::", res)
-    #     # raise Warning(_("<<<<<<<<<<<<<<<<<<<"))
-    #     return res
+    def generate_barcode_randomly(self):
+        product_obj = self.env['product.product'].search([])
+        for i in range(len(product_obj)):
+            barcode = product_obj[i].barcode
+            print(randint(1300000000000, 8000000000000))
+            _logger.info(red + "random ::::::::::::::: %s" % randint(1300000000000, 8000000000000) + reset)
+            _logger.info(red + "product ::::::::::::::: %s" % product_obj[i] + reset)
+            product_obj[i].barcode = randint(1300000000000, 8000000000000)
+            product_obj[i].barcode_new_name = barcode
 
-    # @api.onchange('product_tmpl_id')
-    # def onchange_product_template_id(self):
-    #     print(">>>>>>>>>>>>>>>>>>>::::::::::::::::::", self.product_tmpl_id.name)
-    #     print(">>>>>>>>>>>>>>>>>>>::::::::::::::::::", self.product_tmpl_id.barcode)
-    #     print(">>>>>>>>>>>>>>>>>>>::::::::::::::::::", self.product_tmpl_id.default_code)
 
-    # @api.onchange
-    # def write(self, default_code):
-    #     res = super(self.product_tmpl_id).write(default_code)
-    #     print(" work create")
-    #     return res
+#             for product in product_obj:
+#                  _logger.info(red + "now ::::::::::::::: %s" % datetime.now() + reset)
+#                 product.barcode_new_name = product.barcode
+#                 product.barcode = randint(1300000000000, 8000000000000)
 
-    # # @api.model
-    #  def write(self, values):
-    #      res = super(TestStudent, self).write(values)
-    #      print("ooooo")
-    #      return res
+# @api.model
+# def default_get(self, fields_list):
+#     """get default lines"""
+#     print("LLLLLLLLLLLLLLLLLL", fields_list)
+#     # print("LLLLLLLLLLLLLLLLLL", fields_list['default_code'])
+#     print("LLLLLLLLLLLLLLLLLL", self.default_code)
+#     res = super(ProductProduct, self).default_get(fields_list)
+#     res['default_code'] = str(self.product_tmpl_id.default_code) + '999999999999999999'
+#     return res
+
+# @api.model
+# def create(self, vals_list):
+#     products = super(ProductProduct, self).create(vals_list)
+#     print(":::::::::::::ProductProduct create:::::::::::::::", products)
+#     return products
+#
+# def write(self, values):
+#     print(":::::::::::::ProductProduct values:::::::::::::::", values)
+#     print(":::::::::::::product_tmpl_id:::::::::::::::", self.product_tmpl_id)
+#     print(":::::::::::::default_code:::::::::::::::", self.product_tmpl_id.default_code)
+#     res = super(ProductProduct, self).write(values)
+#     print(":::::::::::::default_codeeeeeeeeee:::::::::::::::", self.product_tmpl_id.default_code)
+#     if 'active' in values:
+#         if self.product_tmpl_id:
+#            if self.product_tmpl_id.default_code:
+#                 # print("product_template_attribute_value_ids", self.product_template_attribute_value_ids)
+#                 self.default_code = str(self.product_tmpl_id.default_code)
+#            # if self.product_tmpl_id.barcode:
+#            #      # print("product_template_attribute_value_ids", self.product_template_attribute_value_ids)
+#            #      self.barcode = str(self.product_tmpl_id.barcode)
+#                                 # + str(self.product_template_attribute_value_ids[0]['name'])
+#     # print(":::::::::::::ProductProduct res write:::::::::::::::", res)
+#     # raise Warning(_("<<<<<<<<<<<<<<<<<<<"))
+#     return res
+
+# @api.onchange('product_tmpl_id')
+# def onchange_product_template_id(self):
+#     print(">>>>>>>>>>>>>>>>>>>::::::::::::::::::", self.product_tmpl_id.name)
+#     print(">>>>>>>>>>>>>>>>>>>::::::::::::::::::", self.product_tmpl_id.barcode)
+#     print(">>>>>>>>>>>>>>>>>>>::::::::::::::::::", self.product_tmpl_id.default_code)
+
+# @api.onchange
+# def write(self, default_code):
+#     res = super(self.product_tmpl_id).write(default_code)
+#     print(" work create")
+#     return res
+
+# # @api.model
+#  def write(self, values):
+#      res = super(TestStudent, self).write(values)
+#      print("ooooo")
+#      return res
 
 
 class ProductTemplate(models.Model):
@@ -147,7 +177,7 @@ class ProductTemplate(models.Model):
             if x:
                 #                 products['barcode']
                 p.update({
-                    'barcode': str(x) + '-' + str(p.product_template_attribute_value_ids.name)
+                    'barcode_new_name': str(x) + '-' + str(p.product_template_attribute_value_ids.name)
                 })
             if default_code:
                 p.update({
