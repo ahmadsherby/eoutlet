@@ -79,7 +79,7 @@ class ProductProduct(models.Model):
         product_obj = self.env['product.product'].search([])
         for i in range(len(product_obj)):
             barcode = product_obj[i].barcode
-#             print(randint(1300000000000, 8000000000000))
+            #             print(randint(1300000000000, 8000000000000))
             _logger.info(red + "random ::::::::::::::: %s" % randint(130000000000, 800000000000) + reset)
             _logger.info(red + "product ::::::::::::::: %s" % product_obj[i] + reset)
             product_obj[i].barcode = randint(130000000000, 800000000000)
@@ -154,6 +154,8 @@ class ProductTemplate(models.Model):
     type = fields.Selection(default='product')
     price_before_discount = fields.Float()
 
+    barcode_new_name = fields.Char(string="Barcode")
+
     product_vendor_id = fields.Many2one('product.vendor', string="Vendor")
     product_brand_id = fields.Many2one('product.brand', string="Brand")
     product_department_id = fields.Many2one('product.department', string="Department")
@@ -170,7 +172,7 @@ class ProductTemplate(models.Model):
     def create(self, vals_list):
         products = super(ProductTemplate, self).create(vals_list)
         product = self.env['product.product'].search([('product_tmpl_id.id', '=', products.id)])
-        x = products['barcode']
+        x = products['barcode_new_name']
         default_code = products['default_code']
         cost = products['standard_price']
         for p in product:
