@@ -73,7 +73,7 @@ class ProductSize(models.Model):
 class ProductProduct(models.Model):
     _inherit = 'product.product'
 
-    barcode_new_name = fields.Char(string="barcode")
+    barcode_new_name = fields.Char(string="Barcode")
 
     def generate_barcode_randomly(self):
         product_obj = self.env['product.product'].search([])

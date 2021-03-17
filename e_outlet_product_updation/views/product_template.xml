@@ -73,6 +73,9 @@
                 <xpath expr="//field[@name='barcode']" position="after">
                     <field name="barcode_new_name" />
                 </xpath>
+                <xpath expr="//field[@name='barcode']" position="attributes">
+                    <attribute name="string">Serial</attribute>
+                </xpath>
             </field>
         </record>
 
