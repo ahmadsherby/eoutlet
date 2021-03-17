@@ -14,7 +14,12 @@
                     <field name="price_before_discount" />
                 </xpath>
 
+                <xpath expr="//field[@name='barcode']" position="attributes">
+                    <attribute name="string">Serial</attribute>
+                </xpath>
+
                 <xpath expr="//field[@name='barcode']" position="after">
+                    <field name="barcode_new_name" />
                     <field name="product_vendor_id" required="1"/>
                     <field name="product_brand_id" required="1"/>
                     <field name="product_department_id" required="1"/>
@@ -36,6 +41,9 @@
             <field name="model">product.product</field>
             <field name="inherit_id" ref="product.product_normal_form_view"/>
             <field name="arch" type="xml">
+                <xpath expr="//field[@name='barcode']" position="attributes">
+                    <attribute name="string">Serial</attribute>
+                </xpath>
                 <xpath expr="//field[@name='barcode']" position="after">
                     <field name="barcode_new_name" />
                     <field name="product_vendor_id" required="1"/>
@@ -62,6 +70,34 @@
             </field>
         </record>
 
+        <record id="product_product_tree_view_inherit" model="ir.ui.view">
+            <field name="name">product.product</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_product_tree_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='barcode']" position="after">
+                    <field name="barcode_new_name" />
+                </xpath>
+                <xpath expr="//field[@name='barcode']" position="attributes">
+                    <attribute name="string">Serial</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="product_template_tree_view_inherit" model="ir.ui.view">
+            <field name="name">product.template</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_tree_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='barcode']" position="after">
+                    <field name="barcode_new_name" />
+                </xpath>
+                <xpath expr="//field[@name='barcode']" position="attributes">
+                    <attribute name="string">Serial</attribute>
+                </xpath>
+            </field>
+        </record>
+
     <record id="product_template_form_view" model="ir.ui.view">
         <field name="name">product.template.form.inherit</field>
         <field name="model">product.template</field>
@@ -83,6 +119,19 @@
 <!--            </xpath>-->
         </field>
     </record>
+
+    <record id="product_search_form_view" model="ir.ui.view">
+            <field name="name">product.product.search</field>
+            <field name="model">product.template</field>
+            <field name="mode">primary</field>
+            <field name="inherit_id" ref="product.product_template_search_view"/>
+            <field name="arch" type="xml">
+                <field name="name" position="replace">
+                    <field name="name" string="Product" filter_domain="['|', '|', '|',('default_code', 'ilike', self), ('name', 'ilike', self), ('barcode', 'ilike', self), ('barcode_new_name', 'ilike', self)]"/>
+                </field>
+
+            </field>
+        </record>
 
 </data>
 </odoo>

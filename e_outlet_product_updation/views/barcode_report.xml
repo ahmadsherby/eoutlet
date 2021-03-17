@@ -18,7 +18,7 @@
                         margin:0;padding:0;
                         }
                         .barcode{font-size:13px;}
-                        .barcode-size{font-size:10px;}
+                        .barcode-size{font-size:8px;}
                         .price-left{
                         margin-left:25px;font-size:12px;
                         }
