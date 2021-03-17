@@ -36,6 +36,9 @@
             <field name="model">product.product</field>
             <field name="inherit_id" ref="product.product_normal_form_view"/>
             <field name="arch" type="xml">
+                <xpath expr="//field[@name='barcode']" position="attributes">
+                    <attribute name="string">Serial</attribute>
+                </xpath>
                 <xpath expr="//field[@name='barcode']" position="after">
                     <field name="barcode_new_name" />
                     <field name="product_vendor_id" required="1"/>
@@ -59,6 +62,17 @@
                     <button name="generate_barcode_randomly" type="object" string="generate barcode"/>
                 </xpath>
 
+            </field>
+        </record>
+
+        <record id="product_product_tree_view_inherit" model="ir.ui.view">
+            <field name="name">product.product</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_product_tree_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='barcode']" position="after">
+                    <field name="barcode_new_name" />
+                </xpath>
             </field>
         </record>
 

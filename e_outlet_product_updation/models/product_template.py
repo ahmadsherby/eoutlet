@@ -73,16 +73,16 @@ class ProductSize(models.Model):
 class ProductProduct(models.Model):
     _inherit = 'product.product'
 
-    barcode_new_name = fields.Char()
+    barcode_new_name = fields.Char(string="barcode")
 
     def generate_barcode_randomly(self):
         product_obj = self.env['product.product'].search([])
         for i in range(len(product_obj)):
             barcode = product_obj[i].barcode
-            print(randint(1300000000000, 8000000000000))
-            _logger.info(red + "random ::::::::::::::: %s" % randint(1300000000000, 8000000000000) + reset)
+#             print(randint(1300000000000, 8000000000000))
+            _logger.info(red + "random ::::::::::::::: %s" % randint(130000000000, 800000000000) + reset)
             _logger.info(red + "product ::::::::::::::: %s" % product_obj[i] + reset)
-            product_obj[i].barcode = randint(1300000000000, 8000000000000)
+            product_obj[i].barcode = randint(130000000000, 800000000000)
             product_obj[i].barcode_new_name = barcode
 
 
