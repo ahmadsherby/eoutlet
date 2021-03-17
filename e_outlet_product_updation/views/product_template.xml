@@ -1,585 +1,88 @@
 <odoo>
 <data>
 
-    <record id="product_template_only_form_view_inherit" model="ir.ui.view">
-        <field name="name">product.template</field>
-        <field name="model">product.template</field>
-        <field name="inherit_id" ref="product.product_template_only_form_view"/>
-        <field name="arch" type="xml">
-            <xpath expr="//field[@name='attribute_line_ids']//tree//field[@name='attribute_id']" position="attributes">
-                <attribute name="domain">[('name','in',['size','المقاس'])]</attribute>
-            </xpath>
-
-            <xpath expr="//field[@name='taxes_id']" position="before">
-                <field name="price_before_discount" />
-            </xpath>
-
-            <xpath expr="//field[@name='barcode']" position="after">
-                <field name="product_vendor_id" required="1"/>
-                <field name="product_brand_id" required="1"/>
-                <field name="product_department_id" required="1"/>
-                <field name="product_season_id" required="1"/>
-                <field name="product_model_id" required="1"/>
-                <field name="product_categori_id" required="1"/>
-                <field name="product_country_id" required="1"/>
-                <field name="product_color_id" required="1"/>
-                <field name="product_size_id" />
-                <field name="product_zone_id" />
-                <field name="product_shelf_id" />
-            </xpath>
-
-        </field>
-    </record>
-
-    <record id="product_template_only_form_view_inherit2" model="ir.ui.view">
-        <field name="name">product.product</field>
-        <field name="model">product.product</field>
-        <field name="inherit_id" ref="product.product_normal_form_view"/>
-        <field name="arch" type="xml">
-            <xpath expr="//field[@name='barcode']" position="after">
-                <field name="product_vendor_id" required="1"/>
-                <field name="product_brand_id" required="1"/>
-                <field name="product_department_id" required="1"/>
-                <field name="product_season_id" required="1"/>
-                <field name="product_model_id" required="1"/>
-                <field name="product_categori_id" required="1"/>
-                <field name="product_country_id" required="1"/>
-                <field name="product_color_id" required="1"/>
-                <field name="product_size_id" />
-                <field name="product_zone_id" />
-                <field name="product_shelf_id" />
-            </xpath>
-
-            <xpath expr="//field[@name='taxes_id']" position="before">
-                <field name="price_before_discount" />
-            </xpath>
-
-        </field>
-    </record>
-
-    <record id="product_template_form_view" model="ir.ui.view">
-            <field name="name">product.template.form.inherit</field>
+        <record id="product_template_only_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.template</field>
             <field name="model">product.template</field>
-            <field name="inherit_id" ref="point_of_sale.product_template_form_view"/>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
             <field name="arch" type="xml">
-                <xpath expr="//field[@name='available_in_pos']" position="attributes">
-                    <attribute name="default">1</attribute>
+                <xpath expr="//field[@name='attribute_line_ids']//tree//field[@name='attribute_id']" position="attributes">
+                    <attribute name="domain">[('name','in',['size','المقاس'])]</attribute>
                 </xpath>
+
+                <xpath expr="//field[@name='taxes_id']" position="before">
+                    <field name="price_before_discount" />
+                </xpath>
+
+                <xpath expr="//field[@name='barcode']" position="after">
+                    <field name="product_vendor_id" required="1"/>
+                    <field name="product_brand_id" required="1"/>
+                    <field name="product_department_id" required="1"/>
+                    <field name="product_season_id" required="1"/>
+                    <field name="product_model_id" required="1"/>
+                    <field name="product_categori_id" required="1"/>
+                    <field name="product_country_id" required="1"/>
+                    <field name="product_color_id" required="1"/>
+                    <field name="product_size_id" />
+                    <field name="product_zone_id" />
+                    <field name="product_shelf_id" />
+                </xpath>
+
             </field>
         </record>
 
-    <menuitem id="product_specifications_main_menu"
-              name="Product Specifications"
-              parent="stock.menu_stock_root"
-              sequence="6"
-    />
+        <record id="product_template_only_form_view_inherit2" model="ir.ui.view">
+            <field name="name">product.product</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='barcode']" position="after">
+                    <field name="barcode_new_name" />
+                    <field name="product_vendor_id" required="1"/>
+                    <field name="product_brand_id" required="1"/>
+                    <field name="product_department_id" required="1"/>
+                    <field name="product_season_id" required="1"/>
+                    <field name="product_model_id" required="1"/>
+                    <field name="product_categori_id" required="1"/>
+                    <field name="product_country_id" required="1"/>
+                    <field name="product_color_id" required="1"/>
+                    <field name="product_size_id" />
+                    <field name="product_zone_id" />
+                    <field name="product_shelf_id" />
+                </xpath>
 
-    <!--    product.zone-->
-    <record id="product_zone_form" model="ir.ui.view">
-        <field name="name">product.zone.form</field>
-        <field name="model">product.zone</field>
+                <xpath expr="//field[@name='taxes_id']" position="before">
+                    <field name="price_before_discount" />
+                </xpath>
+
+                <xpath expr="//header" position="inside">
+                    <button name="generate_barcode_randomly" type="object" string="generate barcode"/>
+                </xpath>
+
+            </field>
+        </record>
+
+    <record id="product_template_form_view" model="ir.ui.view">
+        <field name="name">product.template.form.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="point_of_sale.product_template_form_view"/>
         <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <group>
-                            <field name="name" required="1"/>
-                        </group>
-                    </group>
-                </sheet>
-                <div class="oe_chatter">
-                    <field name="message_follower_ids" widget="mail_followers"/>
-                    <field name="activity_ids" widget="mail_activity"/>
-                    <field name="message_ids" widget="mail_thread"/>
-                </div>
-            </form>
+            <xpath expr="//field[@name='available_in_pos']" position="attributes">
+                <attribute name="default">1</attribute>
+            </xpath>
+<!--            <xpath expr="//page[@name='sales']" position="after">-->
+<!--                <page name="pos" string="Point of Sale" attrs="{'invisible': [('sale_ok','=',False)]}">-->
+<!--                    <group name="pos">-->
+<!--                        <group>-->
+<!--                            <field name="available_in_pos"/>-->
+<!--                            <field name="pos_categ_id" attrs="{'invisible': [('available_in_pos', '=', False)]}" string="Category"/>-->
+<!--                            <field name="to_weight" attrs="{'invisible': [('available_in_pos', '=', False)]}"/>-->
+<!--                        </group>-->
+<!--                    </group>-->
+<!--                </page>-->
+<!--            </xpath>-->
         </field>
     </record>
-
-    <record id="product_zone_tree" model="ir.ui.view">
-        <field name="name">product.zone.tree</field>
-        <field name="model">product.zone</field>
-        <field name="arch" type="xml">
-            <tree string="">
-                <field name="name" />
-            </tree>
-        </field>
-    </record>
-
-    <record id="product_zone_action" model="ir.actions.act_window">
-        <field name="name">product zone</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">product.zone</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <menuitem id="product_zone_menu"
-              name="Product Zone"
-              action="product_zone_action"
-              parent="product_specifications_main_menu"
-    />
-    <!--    product.zone-->
-
-    <!--    product.shelf-->
-    <record id="product_shelf_form" model="ir.ui.view">
-        <field name="name">product.shelf.form</field>
-        <field name="model">product.shelf</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <group>
-                            <field name="name" required="1"/>
-                        </group>
-                    </group>
-                </sheet>
-                <div class="oe_chatter">
-                    <field name="message_follower_ids" widget="mail_followers"/>
-                    <field name="activity_ids" widget="mail_activity"/>
-                    <field name="message_ids" widget="mail_thread"/>
-                </div>
-            </form>
-        </field>
-    </record>
-
-    <record id="product_shelf_tree" model="ir.ui.view">
-        <field name="name">product.shelf.tree</field>
-        <field name="model">product.shelf</field>
-        <field name="arch" type="xml">
-            <tree string="">
-                <field name="name" />
-            </tree>
-        </field>
-    </record>
-
-    <record id="product_shelf_action" model="ir.actions.act_window">
-        <field name="name">product shelf</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">product.shelf</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <menuitem id="product_shelf_menu"
-              name="Product Shelf"
-              action="product_shelf_action"
-              parent="product_specifications_main_menu"
-    />
-    <!--    product.shelf-->
-
-    <!--    product.vendor-->
-    <record id="product_vendor_form" model="ir.ui.view">
-        <field name="name">product.vendor.form</field>
-        <field name="model">product.vendor</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <group>
-                            <field name="name" required="1"/>
-                        </group>
-                    </group>
-                </sheet>
-                <div class="oe_chatter">
-                    <field name="message_follower_ids" widget="mail_followers"/>
-                    <field name="activity_ids" widget="mail_activity"/>
-                    <field name="message_ids" widget="mail_thread"/>
-                </div>
-            </form>
-        </field>
-    </record>
-
-    <record id="product_vendor_tree" model="ir.ui.view">
-        <field name="name">product.vendor.tree</field>
-        <field name="model">product.vendor</field>
-        <field name="arch" type="xml">
-            <tree string="">
-                <field name="name" />
-            </tree>
-        </field>
-    </record>
-
-    <record id="product_vendor_action" model="ir.actions.act_window">
-        <field name="name">Vendors</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">product.vendor</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <menuitem id="product_vendor_menu"
-              name="Vendors"
-              action="product_vendor_action"
-              parent="product_specifications_main_menu"
-    />
-    <!--    product.vendor-->
-
-    <!--    product.brand-->
-    <record id="product_brand_form" model="ir.ui.view">
-        <field name="name">product.brand.form</field>
-        <field name="model">product.brand</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <group>
-                            <field name="name" required="1"/>
-                        </group>
-                    </group>
-                </sheet>
-                <div class="oe_chatter">
-                    <field name="message_follower_ids" widget="mail_followers"/>
-                    <field name="activity_ids" widget="mail_activity"/>
-                    <field name="message_ids" widget="mail_thread"/>
-                </div>
-            </form>
-        </field>
-    </record>
-
-    <record id="product_brand_tree" model="ir.ui.view">
-        <field name="name">product.brand.tree</field>
-        <field name="model">product.brand</field>
-        <field name="arch" type="xml">
-            <tree string="">
-                <field name="name" />
-            </tree>
-        </field>
-    </record>
-
-    <record id="product_brand_action" model="ir.actions.act_window">
-        <field name="name">product brand</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">product.brand</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <menuitem id="product_brand_menu"
-              name="Product Brand"
-              action="product_brand_action"
-              parent="product_specifications_main_menu"
-    />
-    <!--    product.brand-->
-
-    <!--    product.department-->
-    <record id="product_department_form" model="ir.ui.view">
-        <field name="name">product.department.form</field>
-        <field name="model">product.department</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <group>
-                            <field name="name" required="1"/>
-                        </group>
-                    </group>
-                </sheet>
-                <div class="oe_chatter">
-                    <field name="message_follower_ids" widget="mail_followers"/>
-                    <field name="activity_ids" widget="mail_activity"/>
-                    <field name="message_ids" widget="mail_thread"/>
-                </div>
-            </form>
-        </field>
-    </record>
-
-    <record id="product_department_tree" model="ir.ui.view">
-        <field name="name">product.department.tree</field>
-        <field name="model">product.department</field>
-        <field name="arch" type="xml">
-            <tree string="">
-                <field name="name" />
-            </tree>
-        </field>
-    </record>
-
-    <record id="product_department_action" model="ir.actions.act_window">
-        <field name="name">product department</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">product.department</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <menuitem id="product_department_menu"
-              name="Product Department"
-              action="product_department_action"
-              parent="product_specifications_main_menu"
-    />
-    <!--    product.department-->
-
-    <!--    product.season-->
-    <record id="product_department_form" model="ir.ui.view">
-        <field name="name">product.season.form</field>
-        <field name="model">product.season</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <group>
-                            <field name="name" required="1"/>
-                        </group>
-                    </group>
-                </sheet>
-                <div class="oe_chatter">
-                    <field name="message_follower_ids" widget="mail_followers"/>
-                    <field name="activity_ids" widget="mail_activity"/>
-                    <field name="message_ids" widget="mail_thread"/>
-                </div>
-            </form>
-        </field>
-    </record>
-
-    <record id="product_season_tree" model="ir.ui.view">
-        <field name="name">product.season.tree</field>
-        <field name="model">product.season</field>
-        <field name="arch" type="xml">
-            <tree string="">
-                <field name="name" />
-            </tree>
-        </field>
-    </record>
-
-    <record id="product_season_action" model="ir.actions.act_window">
-        <field name="name">product season</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">product.season</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <menuitem id="product_season_menu"
-              name="Season"
-              action="product_season_action"
-              parent="product_specifications_main_menu"
-    />
-    <!--    product.season-->
-
-    <!--    product.modell-->
-    <record id="product_modell_form" model="ir.ui.view">
-        <field name="name">product.model.form</field>
-        <field name="model">product.modell</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <group>
-                            <field name="name" required="1"/>
-                        </group>
-                    </group>
-                </sheet>
-                <div class="oe_chatter">
-                    <field name="message_follower_ids" widget="mail_followers"/>
-                    <field name="activity_ids" widget="mail_activity"/>
-                    <field name="message_ids" widget="mail_thread"/>
-                </div>
-            </form>
-        </field>
-    </record>
-
-    <record id="product_modell_tree" model="ir.ui.view">
-        <field name="name">product.model.tree</field>
-        <field name="model">product.modell</field>
-        <field name="arch" type="xml">
-            <tree string="">
-                <field name="name" />
-            </tree>
-        </field>
-    </record>
-
-    <record id="product_modell_action" model="ir.actions.act_window">
-        <field name="name">product model</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">product.modell</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <menuitem id="product_model_menu"
-              name="Product Model"
-              action="product_modell_action"
-              parent="product_specifications_main_menu"
-    />
-    <!--    product.modell-->
-
-    <!--    product.category-->
-    <record id="product_categori_form" model="ir.ui.view">
-        <field name="name">product.category.form</field>
-        <field name="model">product.categori</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <group>
-                            <field name="name" required="1"/>
-                        </group>
-                    </group>
-                </sheet>
-                <div class="oe_chatter">
-                    <field name="message_follower_ids" widget="mail_followers"/>
-                    <field name="activity_ids" widget="mail_activity"/>
-                    <field name="message_ids" widget="mail_thread"/>
-                </div>
-            </form>
-        </field>
-    </record>
-
-    <record id="product_category_tree" model="ir.ui.view">
-        <field name="name">product.category.tree</field>
-        <field name="model">product.categori</field>
-        <field name="arch" type="xml">
-            <tree string="">
-                <field name="name" />
-            </tree>
-        </field>
-    </record>
-
-    <record id="product_category_action" model="ir.actions.act_window">
-        <field name="name">product category</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">product.categori</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <menuitem id="product_category_menu"
-              name="Product Category"
-              action="product_category_action"
-              parent="product_specifications_main_menu"
-    />
-    <!--    product.category-->
-
-    <!--    product.country-->
-    <record id="product_country_form" model="ir.ui.view">
-        <field name="name">product.country.form</field>
-        <field name="model">product.country</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <group>
-                            <field name="name" required="1"/>
-                        </group>
-                    </group>
-                </sheet>
-                <div class="oe_chatter">
-                    <field name="message_follower_ids" widget="mail_followers"/>
-                    <field name="activity_ids" widget="mail_activity"/>
-                    <field name="message_ids" widget="mail_thread"/>
-                </div>
-            </form>
-        </field>
-    </record>
-
-    <record id="product_country_tree" model="ir.ui.view">
-        <field name="name">product.country.tree</field>
-        <field name="model">product.country</field>
-        <field name="arch" type="xml">
-            <tree string="">
-                <field name="name" />
-            </tree>
-        </field>
-    </record>
-
-    <record id="product_country_action" model="ir.actions.act_window">
-        <field name="name">product country</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">product.country</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <menuitem id="product_country_menu"
-              name="Country"
-              action="product_country_action"
-              parent="product_specifications_main_menu"
-    />
-    <!--    product.country-->
-
-    <!--    product.color-->
-    <record id="product_color_form" model="ir.ui.view">
-        <field name="name">product.color.form</field>
-        <field name="model">product.color</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <group>
-                            <field name="name" required="1"/>
-                        </group>
-                    </group>
-                </sheet>
-                <div class="oe_chatter">
-                    <field name="message_follower_ids" widget="mail_followers"/>
-                    <field name="activity_ids" widget="mail_activity"/>
-                    <field name="message_ids" widget="mail_thread"/>
-                </div>
-            </form>
-        </field>
-    </record>
-
-    <record id="product_color_tree" model="ir.ui.view">
-        <field name="name">product.color.tree</field>
-        <field name="model">product.color</field>
-        <field name="arch" type="xml">
-            <tree string="">
-                <field name="name" />
-            </tree>
-        </field>
-    </record>
-
-    <record id="product_color_action" model="ir.actions.act_window">
-        <field name="name">product color</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">product.color</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <menuitem id="product_color_menu"
-              name="Product Color"
-              action="product_color_action"
-              parent="product_specifications_main_menu"
-    />
-    <!--    product.color-->
-
-    <!--    product.size-->
-    <record id="product_size_form" model="ir.ui.view">
-        <field name="name">product.size.form</field>
-        <field name="model">product.size</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <group>
-                            <field name="name" required="1"/>
-                        </group>
-                    </group>
-                </sheet>
-                <div class="oe_chatter">
-                    <field name="message_follower_ids" widget="mail_followers"/>
-                    <field name="activity_ids" widget="mail_activity"/>
-                    <field name="message_ids" widget="mail_thread"/>
-                </div>
-            </form>
-        </field>
-    </record>
-
-    <record id="product_size_tree" model="ir.ui.view">
-        <field name="name">product.size.tree</field>
-        <field name="model">product.size</field>
-        <field name="arch" type="xml">
-            <tree string="">
-                <field name="name" />
-            </tree>
-        </field>
-    </record>
-
-    <record id="product_size_action" model="ir.actions.act_window">
-        <field name="name">product size</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">product.size</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <menuitem id="product_size_menu"
-              name="Product Size"
-              action="product_size_action"
-              parent="product_specifications_main_menu"
-    />
-    <!--    product.size-->
-
 
 </data>
 </odoo>

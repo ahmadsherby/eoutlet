@@ -3,7 +3,7 @@
     <data>
 
         <template id="report_simple_barcode_inherit"  inherit_id="product.report_simple_barcode">
-                <xpath expr="//div[1]" position="replace">
+            <xpath expr="//div[1]" position="replace">
                     <style>
                         .table-style{
                         margin:0;padding:0;wudth:100%;background:#fff;
@@ -17,7 +17,8 @@
                         .tale-style tr td{
                         margin:0;padding:0;
                         }
-                        .barcode{font-size:7px;}
+                        .barcode{font-size:13px;}
+                        .barcode-size{font-size:10px;}
                         .price-left{
                         margin-left:25px;font-size:12px;
                         }
@@ -49,17 +50,17 @@
                           -o-transform:rotate(-10deg);
                           transform:rotate(-10deg);
                         }
-                        .barcode-image{text-align:center;}
+                        .barcode-image{text-align:center;font-size:13px;}
 
                     </style>
-                    <table class="table-style" >
+                    <table class="table-style">
                     <tr>
                         <th class="table-active text-left" style="height: 1rem; ">
                           <span class="strikethrough price-left" style="background:#fff; color:#000;border-radius:5px;padding:3px;">
                             <strong t-field="product.price_before_discount"/> SR
                           </span>
                         </th>
-                        <th></th>
+                        <th/>
                         <th class="table-active text-right" style="height: 1rem;">
                           <span class="price-right" style="background:#fff; color:#000;border-radius:5px;padding:3px;">
                             <strong t-field="product.list_price"/> SR
@@ -68,27 +69,26 @@
                     </tr>
 
                     <tr>
-                        <td colspan="3" class="barcode-image">
+                        <td colspan="3">
                             <t t-if="product.barcode">
-                                <img alt="Barcode" t-if="len(product.barcode) == 13" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('EAN13', product.barcode, 600, 150)" style="width:100%;height:2rem;padding:0"/>
-                                <img alt="Barcode" t-elif="len(product.barcode) == 8" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('EAN8', product.barcode, 600, 150)" style="width:100%;height:2rem;padding:0"/>
-                                <img alt="Barcode" t-else="" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', product.barcode, 600, 150)" style="width:100%;height:2rem;padding:0"/>
+                                <!--<img alt="Barcode" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', product.barcode, 800, 150)" style="width:100%;height:2rem;padding:0"/>-->
+                                <img alt="Barcode" t-if="len(product.barcode) == 13" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('EAN13', product.barcode, 800, 150)" style="width:100%;height:2rem;padding:0"/>
+                                <img alt="Barcode" t-elif="len(product.barcode) == 8" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('EAN8', product.barcode, 800, 150)" style="width:100%;height:2rem;padding:0"/>
+                                <img alt="Barcode" t-else="" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', product.barcode, 800, 150)" style="width:100%;height:2rem;padding:0"/>
                             </t>
                             <t t-else=""><span class="text-muted">No barcode available</span></t>
                         </td>
                     </tr>
 
-
                     <tr>
-                        <td  colspan="3" class="table-active text-left" style="height: 1rem;background:#fff;border: 0px solid white;padding:0 10px">
-<!--                          <span class="footer-left" t-field="product.product_brand_id.name[0:10]"/>-->
+                        <td colspan="3" class="table-active text-left" style="height: 1rem;background:#fff;border: 0px solid white;padding:0 10px">
                           <span class="footer-left" t-esc="product.product_brand_id.name[0:10] if product.product_brand_id else ''"/>
-                          <span class="barcode" t-field="product.barcode"/>
-<!--                          <span class="footer-right" t-field="product.name[0:10]" />-->
+                          <span  class="barcode-size" t-field="product.barcode_new_name"/>
                           <span class="footer-right" t-esc="product.name[0:10] if product.name else ''"/>
 
                         </td>
                     </tr>
+
                         </table>
 
                 </xpath>
