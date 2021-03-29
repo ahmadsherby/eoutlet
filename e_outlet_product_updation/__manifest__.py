@@ -12,6 +12,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/product_template.xml',
+        'views/stock_quant.xml',
         'views/barcode_report.xml',
     ]
 }
