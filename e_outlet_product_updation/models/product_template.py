@@ -86,6 +86,14 @@ class ProductProduct(models.Model):
 
     barcode_new_name = fields.Char(string="Barcode")
 
+    def name_get(self):
+        """ append new barcode to name """
+        res = []
+        for record in self:
+            name = str(record.name) + str('[') + str(record.default_code) + str('-') + str(record.barcode_new_name) + str(']')
+            res.append((record.id, name))
+        return res
+
     def generate_barcode_randomly(self):
         product_obj = self.env['product.product'].search([])
         for i in range(len(product_obj)):
@@ -183,14 +191,19 @@ class ProductTemplate(models.Model):
     def create(self, vals_list):
         products = super(ProductTemplate, self).create(vals_list)
         product = self.env['product.product'].search([('product_tmpl_id.id', '=', products.id)])
-        x = products['barcode_new_name']
+        product_obj = self.env['product.product'].search([]).mapped('barcode_new_name')
+        barcode = products['barcode_new_name']
+        barcode_new = products['barcode_new_name']
         default_code = products['default_code']
         cost = products['standard_price']
         for p in product:
-            if x:
-                #                 products['barcode']
+            random_barcode = randint(130000000000, 800000000000)
+            p.update({
+                'barcode': random_barcode if random_barcode not in product_obj else ''
+            })
+            if barcode_new:
                 p.update({
-                    'barcode_new_name': str(x) + '-' + str(p.product_template_attribute_value_ids.name)
+                    'barcode_new_name': str(barcode_new) + '-' + str(p.product_template_attribute_value_ids.name)
                 })
             if default_code:
                 p.update({
