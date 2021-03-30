@@ -158,26 +158,26 @@ class ProductTemplate(models.Model):
 class StockQuant(models.Model):
     _inherit = 'stock.quant'
 
-    product_vendor_id = fields.Many2one('product.vendor', strore=True, force_save=True,
+    product_vendor_id = fields.Many2one('product.vendor', store=True, force_save=True,
                                         string="Vendor", related='product_id.product_vendor_id')
-    product_brand_id = fields.Many2one('product.brand', strore=True, force_save=True,
+    product_brand_id = fields.Many2one('product.brand', store=True, force_save=True,
                                        string="Brand", related='product_id.product_brand_id')
-    product_department_id = fields.Many2one('product.department', strore=True, force_save=True,
+    product_department_id = fields.Many2one('product.department', store=True, force_save=True,
                                             string="Department",
                                             related='product_id.product_department_id')
-    product_season_id = fields.Many2one('product.season', strore=True, force_save=True,
+    product_season_id = fields.Many2one('product.season', store=True, force_save=True,
                                         string="season", related='product_id.product_season_id')
-    product_model_id = fields.Many2one('product.modell', strore=True, force_save=True,
+    product_model_id = fields.Many2one('product.modell', store=True, force_save=True,
                                        string="product model", related='product_id.product_model_id')
-    product_categori_id = fields.Many2one('product.categori', strore=True, force_save=True,
+    product_categori_id = fields.Many2one('product.categori', store=True, force_save=True,
                                           string="category", related='product_id.product_categori_id')
-    product_country_id = fields.Many2one('product.country', strore=True, force_save=True,
+    product_country_id = fields.Many2one('product.country', store=True, force_save=True,
                                          string="country", related='product_id.product_country_id')
-    product_color_id = fields.Many2one('product.color', strore=True, force_save=True,
+    product_color_id = fields.Many2one('product.color', store=True, force_save=True,
                                        string="color", related='product_id.product_color_id')
-    product_size_id = fields.Many2one('product.size', strore=True, force_save=True,
+    product_size_id = fields.Many2one('product.size', store=True, force_save=True,
                                       string="size", related='product_id.product_size_id')
-    product_zone_id = fields.Many2one('product.zone', strore=True, force_save=True,
+    product_zone_id = fields.Many2one('product.zone', store=True, force_save=True,
                                       string="Product Zone", related='product_id.product_zone_id')
-    product_shelf_id = fields.Many2one('product.shelf', strore=True, force_save=True,
+    product_shelf_id = fields.Many2one('product.shelf', store=True, force_save=True,
                                        string="Product Shelf", related='product_id.product_shelf_id')
